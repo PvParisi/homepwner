@@ -19,6 +19,7 @@
 		42D9EA5C1E547B370052A25B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9EA5B1E547B370052A25B /* ItemCell.swift */; };
 		42D9EA5E1E54A2A20052A25B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9EA5D1E54A2A20052A25B /* DetailViewController.swift */; };
 		42D9EA601E55C2B20052A25B /* DetailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9EA5F1E55C2B20052A25B /* DetailTextField.swift */; };
+		42D9EA661E55EA280052A25B /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9EA651E55EA280052A25B /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		42D9EA5B1E547B370052A25B /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		42D9EA5D1E54A2A20052A25B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42D9EA5F1E55C2B20052A25B /* DetailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTextField.swift; sourceTree = "<group>"; };
+		42D9EA651E55EA280052A25B /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				42D9EA5D1E54A2A20052A25B /* DetailViewController.swift */,
 				42D9EA571E5226A40052A25B /* Item.swift */,
 				42D9EA591E53024B0052A25B /* ItemStore.swift */,
+				42D9EA651E55EA280052A25B /* ImageStore.swift */,
 				42D9EA5B1E547B370052A25B /* ItemCell.swift */,
 				42D9EA5F1E55C2B20052A25B /* DetailTextField.swift */,
 				42D9EA2B1E5224640052A25B /* Main.storyboard */,
@@ -280,6 +283,7 @@
 				42D9EA561E5225C40052A25B /* ItemsViewController.swift in Sources */,
 				42D9EA581E5226A40052A25B /* Item.swift in Sources */,
 				42D9EA5A1E53024B0052A25B /* ItemStore.swift in Sources */,
+				42D9EA661E55EA280052A25B /* ImageStore.swift in Sources */,
 				42D9EA5E1E54A2A20052A25B /* DetailViewController.swift in Sources */,
 				42D9EA281E5224640052A25B /* AppDelegate.swift in Sources */,
 				42D9EA601E55C2B20052A25B /* DetailTextField.swift in Sources */,
