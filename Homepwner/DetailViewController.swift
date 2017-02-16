@@ -15,6 +15,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var removeImageButton: UIBarButtonItem!
     
     var item: Item! {
         didSet {
@@ -81,6 +82,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         let image = info[UIImagePickerControllerEditedImage] as! UIImage
         imageStore.setImage(image, forKey: item.itemKey)
         imageView.image = image
+        removeImageButton.isEnabled = true
         dismiss(animated: true, completion: nil)
     }
     
@@ -104,5 +106,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func removeImage(_ sender: UIBarButtonItem) {
+        if imageView.image != nil {
+            imageStore.deleteImage(forKey: item.itemKey)
+            imageView.image = nil
+            removeImageButton.isEnabled = false
+        }
     }
 }

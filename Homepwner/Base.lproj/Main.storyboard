@@ -198,6 +198,12 @@
                                             <action selector="takePicture:" destination="c1g-7y-qPX" id="fbR-97-SLE"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="DNe-eP-vC7"/>
+                                    <barButtonItem enabled="NO" title="Remove Image" id="7Ne-Tb-z5C">
+                                        <connections>
+                                            <action selector="removeImage:" destination="c1g-7y-qPX" id="BBB-9J-XiU"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -220,6 +226,7 @@
                         <outlet property="dateLabel" destination="Ll4-JR-eWr" id="d5a-IB-iuA"/>
                         <outlet property="imageView" destination="rlt-VX-KfT" id="YZz-A4-I2A"/>
                         <outlet property="nameField" destination="80G-gg-GRJ" id="pI9-qN-cvj"/>
+                        <outlet property="removeImageButton" destination="7Ne-Tb-z5C" id="6aM-Bc-2rl"/>
                         <outlet property="serialNumberField" destination="pIx-kU-yqR" id="kJq-Bo-Dxd"/>
                         <outlet property="valueField" destination="yIb-FQ-OMF" id="SzN-FC-5Zg"/>
                     </connections>
