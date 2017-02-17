@@ -98,6 +98,17 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             imagePicker.sourceType = .camera
+            let overlayView = UIView(frame: imagePicker.view.frame)
+            let crosshairView = UIImageView(image: UIImage(named:  "crosshair"))
+            crosshairView.frame = CGRect(x: overlayView.frame.size.width / 4,
+                                         y: overlayView.frame.size.height / 2 - overlayView.frame.size.width / 2,
+                                         width: overlayView.frame.size.width / 2,
+                                         height: overlayView.frame.size.width / 2)
+            crosshairView.center = CGPoint(x: overlayView.frame.size.width / 2,
+                                           y: overlayView.frame.size.height / 2);
+            overlayView.addSubview(crosshairView)
+//            overlayView.backgroundColor = UIColor(patternImage: UIImage(named: "crosshair")!)
+            imagePicker.cameraOverlayView = overlayView
         }
         else {
             imagePicker.sourceType = .photoLibrary
